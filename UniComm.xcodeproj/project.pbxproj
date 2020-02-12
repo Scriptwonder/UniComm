@@ -17,7 +17,6 @@
 		5BC1824F23F313F400F16E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC1824D23F313F400F16E39 /* LaunchScreen.storyboard */; };
 		5BC1825A23F313F400F16E39 /* UniCommTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1825923F313F400F16E39 /* UniCommTests.swift */; };
 		5BC1826523F313F400F16E39 /* UniCommUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1826423F313F400F16E39 /* UniCommUITests.swift */; };
-		DB7E583423F4B4CB00E1D068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7E583323F4B4CB00E1D068 /* Main.storyboard */; };
 		DB7E583623F4B4D300E1D068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7E583523F4B4D300E1D068 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		5BC1826023F313F400F16E39 /* UniCommUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniCommUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC1826423F313F400F16E39 /* UniCommUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniCommUITests.swift; sourceTree = "<group>"; };
 		5BC1826623F313F400F16E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB7E583323F4B4CB00E1D068 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DB7E583523F4B4D300E1D068 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 				5BC1824623F313F000F16E39 /* ContentView.swift */,
 				5BC1824823F313F400F16E39 /* Assets.xcassets */,
 				DB7E583523F4B4D300E1D068 /* ViewController.swift */,
-				DB7E583323F4B4CB00E1D068 /* Main.storyboard */,
 				4F00DF4C23F4B6EA003709CA /* Main.storyboard */,
 				5BC1824D23F313F400F16E39 /* LaunchScreen.storyboard */,
 				5BC1825023F313F400F16E39 /* Info.plist */,
@@ -256,7 +253,6 @@
 				4F00DF4E23F4B6EA003709CA /* Main.storyboard in Resources */,
 				5BC1824C23F313F400F16E39 /* Preview Assets.xcassets in Resources */,
 				5BC1824923F313F400F16E39 /* Assets.xcassets in Resources */,
-				DB7E583423F4B4CB00E1D068 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
