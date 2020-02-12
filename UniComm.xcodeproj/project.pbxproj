@@ -17,6 +17,7 @@
 		5BC1824F23F313F400F16E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC1824D23F313F400F16E39 /* LaunchScreen.storyboard */; };
 		5BC1825A23F313F400F16E39 /* UniCommTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1825923F313F400F16E39 /* UniCommTests.swift */; };
 		5BC1826523F313F400F16E39 /* UniCommUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1826423F313F400F16E39 /* UniCommUITests.swift */; };
+		DB6FBF9D23F4C06F00A9FC0F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FBF9C23F4C06F00A9FC0F /* Login.storyboard */; };
 		DB7E583623F4B4D300E1D068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7E583523F4B4D300E1D068 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		5BC1826023F313F400F16E39 /* UniCommUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniCommUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC1826423F313F400F16E39 /* UniCommUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniCommUITests.swift; sourceTree = "<group>"; };
 		5BC1826623F313F400F16E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6FBF9C23F4C06F00A9FC0F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DB7E583523F4B4D300E1D068 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				5BC1825023F313F400F16E39 /* Info.plist */,
 				5BC1824323F313F000F16E39 /* UniComm.xcdatamodeld */,
 				5BC1824A23F313F400F16E39 /* Preview Content */,
+				DB6FBF9C23F4C06F00A9FC0F /* Login.storyboard */,
 			);
 			path = UniComm;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				5BC1824F23F313F400F16E39 /* LaunchScreen.storyboard in Resources */,
 				5BC1824C23F313F400F16E39 /* Preview Assets.xcassets in Resources */,
 				5BC1824923F313F400F16E39 /* Assets.xcassets in Resources */,
+				DB6FBF9D23F4C06F00A9FC0F /* Login.storyboard in Resources */,
 				4FF38E5523F4BEAF00EEF423 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
