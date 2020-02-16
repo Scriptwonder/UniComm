@@ -11,7 +11,10 @@ import SwiftUI
 struct ContentView: View {
     @State var username: String = ""
     @State var password: String = ""
+    
+    @State var showView = false
     var body: some View {
+        NavigationView {
         VStack(alignment:.leading) {
             Text("UniComm")
             .font(.title)
@@ -27,15 +30,15 @@ struct ContentView: View {
             }.padding(.leading)
             
             VStack(alignment: .leading) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                NavigationLink(destination: Homepage()) {
                 Text("Login")
                 }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Register")
+                NavigationLink(destination: Login(),isActive: $showView) {                Text("Register")
                 }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+            NavigationLink(destination:forgetPassword()) {
                 Text("Forget Password")
                 }
+            }
             }
         }
     }

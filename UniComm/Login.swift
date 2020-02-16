@@ -35,7 +35,7 @@ struct Login: View {
             }
             
             VStack(alignment: .leading) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                NavigationLink(destination: Homepage()) {
                 Text("Submit")
                 }
             }
