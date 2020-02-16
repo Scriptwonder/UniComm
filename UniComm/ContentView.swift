@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var username: String = ""
+    @State var password: String = ""
     var body: some View {
         VStack(alignment:.leading) {
             Text("UniComm")
@@ -18,10 +20,10 @@ struct ContentView: View {
             VStack(alignment: .leading, spacing: 3.0) {
             Text("Username")
                 .font(.subheadline)
-            TextField("Enter your username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                TextField("Enter your username", text: $username)
             Text("Password")
                 .font(.subheadline)
-            TextField("Enter your password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            TextField("Enter your password", text: $password)
             }.padding(.leading)
             
             VStack(alignment: .leading) {

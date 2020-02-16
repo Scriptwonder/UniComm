@@ -9,25 +9,29 @@
 import SwiftUI
 
 struct Login: View {
+    @State var name: String = ""
+    @State var username: String = ""
+    @State var password: String = ""
+    @State var password1: String = ""
     var body: some View {
-        VStack(alignment:.leading) {
+        VStack {
             Text("UniComm")
-            .font(.title)
-            .foregroundColor(.green)
+                .font(.title)
+                .foregroundColor(.green)
             
             VStack(alignment: .leading, spacing: 3.0) {
-            Text("Email")
-                .font(.subheadline)
-            TextField("Enter your username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            Text("Username")
-                .font(.subheadline)
-            TextField("Enter your username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            Text("Password")
-                .font(.subheadline)
-            TextField("Enter your password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            Text("Re-enter Password")
-                .font(.subheadline)
-            TextField("Re-enter your password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                Text("Email")
+                    .font(.subheadline)
+                TextField("Enter your username", text: $name)
+                Text("Username")
+                    .font(.subheadline)
+                TextField("Enter your username", text: $username)
+                Text("Password")
+                    .font(.subheadline)
+                TextField("Enter your password", text: $password)
+                Text("Re-enter Password")
+                    .font(.subheadline)
+                TextField("Re-enter your password", text: $password1)
             }
             
             VStack(alignment: .leading) {
