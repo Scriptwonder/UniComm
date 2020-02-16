@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
+//  Login.swift
 //  UniComm
 //
-//  Created by 吴舒同 on 2020/2/11.
+//  Created by 吴舒同 on 2020/2/16.
 //  Copyright © 2020 吴舒同. All rights reserved.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct Login: View {
     var body: some View {
         VStack(alignment:.leading) {
             Text("UniComm")
@@ -16,31 +16,31 @@ struct ContentView: View {
             .foregroundColor(.green)
             
             VStack(alignment: .leading, spacing: 3.0) {
+            Text("Email")
+                .font(.subheadline)
+            TextField("Enter your username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
             Text("Username")
                 .font(.subheadline)
             TextField("Enter your username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
             Text("Password")
                 .font(.subheadline)
             TextField("Enter your password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            }.padding(.leading)
+            Text("Re-enter Password")
+                .font(.subheadline)
+            TextField("Re-enter your password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            }
             
             VStack(alignment: .leading) {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Login")
-                }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Register")
-                }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Forget Password")
+                Text("Submit")
                 }
             }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Login_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Login()
     }
 }
