@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
     //MARK: Properties
@@ -30,8 +31,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var reenter: UITextField!
     
     @IBAction func createAcc(_ sender: Any) {
+        if password.text != reenter.text{
+            let warnRaiser = UIAlertController(title:"Password unmatch", message:"please re-enter you password.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title:"Pass", style:.cancel,handler:nil)
+            warnRaiser.addAction(defaultAction)
+            self.present(warnRaiser,animated:true,completion:nil)
+            
+        }
+        else{
+            Auth.auth().createUser(withEmail:email.text!, password:password.text!){
+                (user,error)in
+                if error==nil{
+                    self.performSegue(withIdentifier:"signUpToHome",sender:self)
+                }
+                else{
+                    let warnRaiser = UIAlertController(title:"Error",message:error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title:"Pass", style:.cancel,handler:nil)
+                    warnRaiser.addAction(defaultAction)
+                    self.present(warnRaiser, animated:true,completion:nil)
+                }
+        }
     }
-    
+    }
     
     //MARK: Actions
     
