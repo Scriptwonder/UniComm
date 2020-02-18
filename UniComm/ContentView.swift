@@ -33,7 +33,7 @@ struct ContentView: View {
                 NavigationLink(destination: Homepage()) {
                 Text("Login")
                 }
-                NavigationLink(destination: Login(),isActive: $showView) {                Text("Register")
+                NavigationLink(destination: Register(),isActive: $showView) {                Text("Register")
                 }
             NavigationLink(destination:forgetPassword()) {
                 Text("Forget Password")
