@@ -24,6 +24,8 @@
 		5BC1826523F313F400F16E39 /* UniCommUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1826423F313F400F16E39 /* UniCommUITests.swift */; };
 		7503627678B5B9A99C8DE049 /* Pods_UniComm_UniCommUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B8849D094E7A09DAB787E /* Pods_UniComm_UniCommUITests.framework */; };
 		9568353EE06957BF6BD2C8D7 /* Pods_UniComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF4669AD670E95192F55F5 /* Pods_UniComm.framework */; };
+		BB131D5823FC850E00F03D2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB131D5723FC850E00F03D2D /* User.swift */; };
+		BB131D5A23FC857000F03D2D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB131D5923FC857000F03D2D /* SessionStore.swift */; };
 		D4A3AEEC8F7C32ACEA5516F7 /* Pods_UniCommTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2F1EF3C42FD87B30CA62BD /* Pods_UniCommTests.framework */; };
 		DB7E583623F4B4D300E1D068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7E583523F4B4D300E1D068 /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,8 @@
 		69E1331E8309F858F849CB54 /* Pods-UniComm-UniCommUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniComm-UniCommUITests.debug.xcconfig"; path = "Target Support Files/Pods-UniComm-UniCommUITests/Pods-UniComm-UniCommUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		729B8849D094E7A09DAB787E /* Pods_UniComm_UniCommUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniComm_UniCommUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF4669AD670E95192F55F5 /* Pods_UniComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB131D5723FC850E00F03D2D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB131D5923FC857000F03D2D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		BBEF66535425BCBA1532B935 /* Pods-UniCommTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniCommTests.debug.xcconfig"; path = "Target Support Files/Pods-UniCommTests/Pods-UniCommTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB7E583523F4B4D300E1D068 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F927CF35F76A1C5C378FF365 /* Pods-UniComm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniComm.debug.xcconfig"; path = "Target Support Files/Pods-UniComm/Pods-UniComm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				5BC1824123F313F000F16E39 /* SceneDelegate.swift */,
 				5BC1824623F313F000F16E39 /* ContentView.swift */,
 				5BA1972C23F9F8A000A35E4C /* Login.swift */,
+				BB131D5723FC850E00F03D2D /* User.swift */,
+				BB131D5923FC857000F03D2D /* SessionStore.swift */,
 				5BC1824823F313F400F16E39 /* Assets.xcassets */,
 				DB7E583523F4B4D300E1D068 /* ViewController.swift */,
 				5B6C689D23F8A82F004B8124 /* Login.storyboard */,
@@ -461,6 +467,8 @@
 				5BC1824023F313F000F16E39 /* AppDelegate.swift in Sources */,
 				5BC1824523F313F000F16E39 /* UniComm.xcdatamodeld in Sources */,
 				5BA1972D23F9F8A000A35E4C /* Login.swift in Sources */,
+				BB131D5823FC850E00F03D2D /* User.swift in Sources */,
+				BB131D5A23FC857000F03D2D /* SessionStore.swift in Sources */,
 				5BC1824723F313F000F16E39 /* ContentView.swift in Sources */,
 				5BC1824223F313F000F16E39 /* SceneDelegate.swift in Sources */,
 				5BA1972F23FA047F00A35E4C /* Homepage.swift in Sources */,
