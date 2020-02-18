@@ -9,8 +9,49 @@
 import SwiftUI
 
 struct Homepage: View {
+    @State private var searchText = ""//for search
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Group {
+            SearchBar(text: $searchText)
+            
+            UIScrollViewWrapper {
+                HStack {
+                    Spacer()
+                    Button("Films") {
+                        print("Lol")
+                        //should display the film view
+                    }
+                    Spacer()
+                    Button("Books") {
+                        print("lol")
+                        //should display the book view
+                    }
+                    Spacer()
+                    Button("Music") {
+                        //should display the music view
+                    }
+                    Spacer()
+                }.frame(width: UIScreen.main.bounds.width)
+            }
+            }
+            .navigationBarTitle(Text("UniComm"), displayMode: .inline)
+            .navigationBarItems(trailing:
+                HStack {
+                    Button("About") {
+                        print("Lol")
+                    }
+                    Button("Lol") {
+                        print("lol")
+                    }
+                }
+            )
+                
+        }
+        
+        
     }
 }
 

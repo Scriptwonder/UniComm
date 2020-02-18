@@ -14,6 +14,8 @@
 		5BA1972D23F9F8A000A35E4C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1972C23F9F8A000A35E4C /* Register.swift */; };
 		5BA1972F23FA047F00A35E4C /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1972E23FA047F00A35E4C /* Homepage.swift */; };
 		5BA1973123FA0C3300A35E4C /* forgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1973023FA0C3300A35E4C /* forgetPassword.swift */; };
+		5BA1973323FC933000A35E4C /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1973223FC933000A35E4C /* searchBar.swift */; };
+		5BA1973523FC9B1E00A35E4C /* UIScrollViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1973423FC9B1E00A35E4C /* UIScrollViewWrapper.swift */; };
 		5BC1824023F313F000F16E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1823F23F313F000F16E39 /* AppDelegate.swift */; };
 		5BC1824223F313F000F16E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1824123F313F000F16E39 /* SceneDelegate.swift */; };
 		5BC1824523F313F000F16E39 /* UniComm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1824323F313F000F16E39 /* UniComm.xcdatamodeld */; };
@@ -57,6 +59,8 @@
 		5BA1972C23F9F8A000A35E4C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		5BA1972E23FA047F00A35E4C /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		5BA1973023FA0C3300A35E4C /* forgetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPassword.swift; sourceTree = "<group>"; };
+		5BA1973223FC933000A35E4C /* searchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
+		5BA1973423FC9B1E00A35E4C /* UIScrollViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewWrapper.swift; sourceTree = "<group>"; };
 		5BC1823C23F313F000F16E39 /* UniComm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniComm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC1823F23F313F000F16E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC1824123F313F000F16E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 				5BC1824A23F313F400F16E39 /* Preview Content */,
 				5BA1972E23FA047F00A35E4C /* Homepage.swift */,
 				5BA1973023FA0C3300A35E4C /* forgetPassword.swift */,
+				5BA1973223FC933000A35E4C /* searchBar.swift */,
+				5BA1973423FC9B1E00A35E4C /* UIScrollViewWrapper.swift */,
 			);
 			path = UniComm;
 			sourceTree = "<group>";
@@ -463,10 +469,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB7E583623F4B4D300E1D068 /* ViewController.swift in Sources */,
+				5BA1973323FC933000A35E4C /* searchBar.swift in Sources */,
 				5BA1973123FA0C3300A35E4C /* forgetPassword.swift in Sources */,
 				5BC1824023F313F000F16E39 /* AppDelegate.swift in Sources */,
 				5BC1824523F313F000F16E39 /* UniComm.xcdatamodeld in Sources */,
 				5BA1972D23F9F8A000A35E4C /* Register.swift in Sources */,
+				5BA1973523FC9B1E00A35E4C /* UIScrollViewWrapper.swift in Sources */,
 				BB131D5823FC850E00F03D2D /* User.swift in Sources */,
 				BB131D5A23FC857000F03D2D /* SessionStore.swift in Sources */,
 				5BC1824723F313F000F16E39 /* ContentView.swift in Sources */,
