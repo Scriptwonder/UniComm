@@ -106,7 +106,7 @@ struct Films: View {
                 Text("Little Women")
                     .font(.custom("aa", size: 10))
             }
-        }.padding([.leading, .horizontal])
+        }.padding([.top, .horizontal])
     }
 }
 

@@ -15,28 +15,35 @@ struct Register: View {
     @State var password1: String = ""
     var body: some View {
         VStack {
-            Text("UniComm")
-                .font(.title)
-                .foregroundColor(.green)
+            Image("logo1").resizable().scaledToFit().frame(width:300.0,height:280.0)
+            Text("Sign Up").fontWeight(.medium)
+                .font(.largeTitle)
+            .padding([.top,.bottom],20)
             
-            VStack(alignment: .leading, spacing: 3.0) {
+            VStack(alignment: .leading) {
                 Text("Email")
-                    .font(.subheadline)
+                    .font(.headline).fontWeight(.light)
                 TextField("Enter your username", text: $name)
+                    .textFieldStyle(RoundedBorderTextFieldStyle()).padding(1)
+                
                 Text("Username")
-                    .font(.subheadline)
+                    .font(.headline).fontWeight(.light)
                 TextField("Enter your username", text: $username)
+                .textFieldStyle(RoundedBorderTextFieldStyle()).padding(1)
                 Text("Password")
-                    .font(.subheadline)
+                    .font(.headline).fontWeight(.light)
                 TextField("Enter your password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle()).padding(1)
+                
                 Text("Re-enter Password")
-                    .font(.subheadline)
+                    .font(.headline).fontWeight(.light)
                 TextField("Re-enter your password", text: $password1)
-            }
+                .textFieldStyle(RoundedBorderTextFieldStyle()).padding(1)
+            }.padding()
             
             VStack(alignment: .leading) {
                 NavigationLink(destination: Homepage()) {
-                Text("Submit")
+                    Text("Submit").font(.headline)
                 }
             }
         }

@@ -15,21 +15,32 @@ struct ContentView: View {
     @State var showView = false
     var body: some View {
         NavigationView {
-        VStack(alignment:.leading) {
+        VStack(alignment:.center) {
             Text("UniComm")
-            .font(.title)
+                .font(Font.custom("Nightcall",size: 50))
             .foregroundColor(.green)
+                .padding(.vertical, 80)
             
             VStack(alignment: .leading, spacing: 3.0) {
             Text("Username")
                 .font(.subheadline)
-                TextField("Enter your username", text: $username)
+                .padding(12)
+                
+                TextField("Enter your username: ", text: $username)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(12)
+                
             Text("Password")
                 .font(.subheadline)
-            TextField("Enter your password", text: $password)
+                .padding(12)
+            
+                TextField("Enter your password: ", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(12)
+                
             }.padding(.leading)
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .center, spacing: 10.0) {
                 NavigationLink(destination: Homepage()) {
                 Text("Login")
                 }
@@ -39,6 +50,7 @@ struct ContentView: View {
                 Text("Forget Password")
                 }
             }
+            .padding(.vertical, 80)
             }
         }
     }
