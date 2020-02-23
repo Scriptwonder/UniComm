@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Register: View {
+struct SignUp: View {
     @State var name: String = ""
     @State var username: String = ""
     @State var password: String = ""
@@ -52,6 +52,6 @@ struct Register: View {
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
-        Register()
+        SignUp()
     }
 }
