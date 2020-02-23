@@ -44,7 +44,7 @@ struct ContentView: View {
                 NavigationLink(destination: Homepage()) {
                 Text("Login")
                 }
-                NavigationLink(destination: Register(),isActive: $showView) {                Text("Register")
+                NavigationLink(destination: SignUp(),isActive: $showView) {                Text("Register")
                 }
             NavigationLink(destination:forgetPassword()) {
                 Text("Forget Password")
