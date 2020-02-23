@@ -9,6 +9,7 @@ target 'UniComm' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
 
   target 'UniCommTests' do
     inherit! :search_paths
@@ -16,6 +17,7 @@ target 'UniComm' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
   end
 
   target 'UniCommUITests' do
@@ -23,6 +25,7 @@ target 'UniComm' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
   end
 
 end

@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  signUp.swift
 //  UniComm
 //
 //  Created by 吴舒同 on 2020/2/16.
@@ -8,11 +8,16 @@
 
 import SwiftUI
 
-struct Register: View {
-    @State var name: String = ""
+
+struct SignUp: View {
+    @State var email: String = ""
     @State var username: String = ""
     @State var password: String = ""
     @State var password1: String = ""
+    
+    @EnvironmentObject var session : SessionStore
+    
+    
     var body: some View {
         VStack {
             Text("UniComm")
@@ -22,7 +27,7 @@ struct Register: View {
             VStack(alignment: .leading, spacing: 3.0) {
                 Text("Email")
                     .font(.subheadline)
-                TextField("Enter your username", text: $name)
+                TextField("Enter your email", text: $email)
                 Text("Username")
                     .font(.subheadline)
                 TextField("Enter your username", text: $username)
@@ -35,9 +40,24 @@ struct Register: View {
             }
             
             VStack(alignment: .leading) {
-                NavigationLink(destination: Homepage()) {
-                Text("Submit")
+                //NavigationLink(destination: Homepage()) {
+                Button(action:signUp){Text("SignUp")}
+                //Text("Submit")
                 }
+            }
+        }
+    
+    
+    func signUp(){
+        if !password.isEmpty && !email.isEmpty && password == password1{
+            session.signUp(email:email,password:password){
+                (result,error) in
+                if error != nil{print("Error")}
+                else{
+                    self.email = ""
+                    self.password = ""
+                }
+                
             }
         }
     }
@@ -45,6 +65,6 @@ struct Register: View {
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
-        Register()
+        SignUp().environmentObject(SessionStore())
     }
 }

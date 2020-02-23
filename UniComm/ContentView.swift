@@ -11,8 +11,9 @@ import SwiftUI
 struct ContentView: View {
     @State var username: String = ""
     @State var password: String = ""
-    
     @State var showView = false
+    @ObservedObject var session = SessionStore()
+    
     var body: some View {
         NavigationView {
         VStack(alignment:.leading) {
@@ -33,7 +34,7 @@ struct ContentView: View {
                 NavigationLink(destination: Homepage()) {
                 Text("Login")
                 }
-                NavigationLink(destination: Register(),isActive: $showView) {                Text("Register")
+                NavigationLink(destination: SignUp(),isActive: $showView) {                Text("SignUp")
                 }
             NavigationLink(destination:forgetPassword()) {
                 Text("Forget Password")
@@ -46,6 +47,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(SessionStore())
     }
 }

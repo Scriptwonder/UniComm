@@ -10,12 +10,14 @@ import Foundation
 import SwiftUI
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 
-class SessionStore: ObservableObject{
+class SessionStore: ObservableObject {
     @Published var session : User?
     @Published var isLoggined : Bool?
     //@Published var
+    var ref = Database.database().reference(withPath: "\(String(describing: Auth.auth().currentUser?.uid ?? "Error"))")
     
     func listen(){
         _ = Auth.auth().addStateDidChangeListener{ (auth,user) in
