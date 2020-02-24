@@ -78,6 +78,7 @@ struct Homepage: View {
 
 struct Films: View {
     var body: some View {
+        //NavigationView {
         NavigationLink(destination: detailView()) {
             VStack(alignment: .center, spacing: 20) {
                 Image("1917poster")
@@ -107,6 +108,17 @@ struct Films: View {
                     .font(.custom("aa", size: 10))
             }
         }.padding([.top, .horizontal])
+            /*
+             NavigationLink(destination: detailView()) {
+                Image("1917poster")
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 60, height: 100)
+                .cornerRadius(4)
+            }
+        }*/
+        
+       
     }
 }
 
