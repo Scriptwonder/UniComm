@@ -8,38 +8,66 @@
 
 import SwiftUI
 
-struct detailView: View {
+struct detailViewFilm: View {
     
     var body: some View {
-        VStack {
-            HStack {
-                Image("1917poster")
-                VStack {
-                    Text("1917")
-                //title
-                //director
-                //cinematography
-                //writing
-                    //movie website
-                //release
-                //gross(US/Global)
-                    //award if possible
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("1917").font(.largeTitle)
+                HStack {
+                Image("01")
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 140, height: 200)
+                .cornerRadius(5)
+                    VStack(alignment: .leading) {
+                        Text("Genre:")
+                        Text("Release:")
+                        Text("Area:")
+                        Text("Language:")
+                        Text("Length:")
+                        Text("IMDB Link:")
+                    }
+                    VStack {
+                    Text("Add to list(with a img button)")
+                    Text("Like(button to like)")
+                        //should be two images, one add and one heart
+                    }
                 }
+                Text("#This place will show the review score#").background(Color.pink)
+                //a function with a parameter score that could show an animated five stars
+                //put award here if possible
+                Text("Plot Description:")
+                //plot
+                Divider()
+                Text("Cast:")
+                Text("Director:")
+                Text("Cinematography:")
+                Text("Actor:")
+                //Divider()
+                HStack {
+                    NavigationLink(destination:Comment()) {
+                        Button("Comment") {
+                            
+                        }
+                    }
+                    NavigationLink(destination:Review()) {
+                        Button("Review") {
+                            
+                        }
+                    }
+                }
+                //now this will show a viewPager with the left being comment and right being review(span the whole width)
+                
             }
-            //should show rating()
-            //then plot description
-            //cast
             //story section(maybe?)
-            //comment section(userself comment should be on the top)
-            //review section(should be on the scrollBar with comment)
-            
             //similar movielist
-        }
+        }.navigationBarTitle(Text("1917"),displayMode: .inline)
     }
 }
 
 struct detailView_Previews: PreviewProvider {
     static var previews: some View {
-        detailView()
+        detailViewFilm()
     }
 }

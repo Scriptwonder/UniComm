@@ -23,6 +23,8 @@
 		5BA1973F2403446D00A35E4C /* contentBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1973E2403446D00A35E4C /* contentBase.swift */; };
 		5BA197412403496300A35E4C /* detailViewBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA197402403496300A35E4C /* detailViewBook.swift */; };
 		5BA197432403496C00A35E4C /* detailViewMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA197422403496C00A35E4C /* detailViewMusic.swift */; };
+		5BA19745240B5CDB00A35E4C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA19744240B5CDB00A35E4C /* Comment.swift */; };
+		5BA19747240B5CE500A35E4C /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA19746240B5CE500A35E4C /* Review.swift */; };
 		5BC1824023F313F000F16E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1823F23F313F000F16E39 /* AppDelegate.swift */; };
 		5BC1824223F313F000F16E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1824123F313F000F16E39 /* SceneDelegate.swift */; };
 		5BC1824523F313F000F16E39 /* UniComm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1824323F313F000F16E39 /* UniComm.xcdatamodeld */; };
@@ -75,6 +77,8 @@
 		5BA1973E2403446D00A35E4C /* contentBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentBase.swift; sourceTree = "<group>"; };
 		5BA197402403496300A35E4C /* detailViewBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewBook.swift; sourceTree = "<group>"; };
 		5BA197422403496C00A35E4C /* detailViewMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewMusic.swift; sourceTree = "<group>"; };
+		5BA19744240B5CDB00A35E4C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		5BA19746240B5CE500A35E4C /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		5BC1823C23F313F000F16E39 /* UniComm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniComm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC1823F23F313F000F16E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC1824123F313F000F16E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				5BA1973C2403446000A35E4C /* personalBlog.swift */,
 				5BA1973E2403446D00A35E4C /* contentBase.swift */,
 				5BA1973423FC9B1E00A35E4C /* UIScrollViewWrapper.swift */,
+				5BA19744240B5CDB00A35E4C /* Comment.swift */,
+				5BA19746240B5CE500A35E4C /* Review.swift */,
 			);
 			path = UniComm;
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 			files = (
 				5BA1973F2403446D00A35E4C /* contentBase.swift in Sources */,
 				DB7E583623F4B4D300E1D068 /* ViewController.swift in Sources */,
+				5BA19747240B5CE500A35E4C /* Review.swift in Sources */,
 				5BA197432403496C00A35E4C /* detailViewMusic.swift in Sources */,
 				5BA1973323FC933000A35E4C /* searchBar.swift in Sources */,
 				5BA1973123FA0C3300A35E4C /* forgetPassword.swift in Sources */,
@@ -504,6 +511,7 @@
 				BB131D5A23FC857000F03D2D /* SessionStore.swift in Sources */,
 				5BA1973724031E8C00A35E4C /* detailViewFilm.swift in Sources */,
 				5BA1973B2403445400A35E4C /* chat.swift in Sources */,
+				5BA19745240B5CDB00A35E4C /* Comment.swift in Sources */,
 				5BC1824723F313F000F16E39 /* ContentView.swift in Sources */,
 				5BC1824223F313F000F16E39 /* SceneDelegate.swift in Sources */,
 				5BA1972F23FA047F00A35E4C /* Homepage.swift in Sources */,

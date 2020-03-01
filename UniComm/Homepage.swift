@@ -18,7 +18,6 @@ struct Homepage: View {
         NavigationView {
             Group {
             SearchBar(text: $searchText)
-            
             UIScrollViewWrapper {
                 HStack {
                     Spacer()
@@ -44,17 +43,14 @@ struct Homepage: View {
                     }
                     Spacer()
                 }.frame(width: UIScreen.main.bounds.width)
-                
-                if (self.films == 1) {
-                    Films()
-                } else if (self.books == 1) {
-                    Books()
-                } else if (self.music == 1) {
-                    Music()
-                }
             }
-            
-                
+            if (self.films == 1) {
+                Films()
+            } else if (self.books == 1) {
+                Books()
+            } else if (self.music == 1) {
+                Music()
+            }
             }
             .navigationBarTitle(Text("UniComm"), displayMode: .inline)
             .navigationBarItems(trailing:
@@ -67,58 +63,26 @@ struct Homepage: View {
                     }
                 }
             )
-            
-            
-                
         }
-        
-        
     }
 }
 
 struct Films: View {
     var body: some View {
-        //NavigationView {
-        NavigationLink(destination: detailView()) {
-            VStack(alignment: .center, spacing: 20) {
-                Image("1917poster")
+        //Group {
+            GridStack(rows: 4, columns: 4) { row, col in
+                NavigationLink(destination: detailViewFilm()) {
+                    VStack {
+                Image("0\((row * 4 + col)%3+1)")
                     .renderingMode(.original)
                     .resizable()
                     .frame(width: 60, height: 100)
                     .cornerRadius(4)
-                Text("1917")
+                Text("\(row*4 + col)")
                     .font(.custom("aa", size: 10))
-            }
-            VStack(alignment: .center, spacing: 20) {
-                Image("parasite")
-                    .renderingMode(.original)
-                    .resizable()
-                    .frame(width: 60, height: 100)
-                    .cornerRadius(4)
-                Text("Parasite")
-                    .font(.custom("aa", size: 10))
-            }
-            VStack(alignment: .center, spacing: 20) {
-                Image("little")
-                    .renderingMode(.original)
-                    .resizable()
-                    .frame(width: 60, height: 100)
-                    .cornerRadius(4)
-                Text("Little Women")
-                    .font(.custom("aa", size: 10))
-            }
-        }.padding([.top, .horizontal])
-            /*
-             NavigationLink(destination: detailView()) {
-                Image("1917poster")
-                .renderingMode(.original)
-                .resizable()
-                .frame(width: 60, height: 100)
-                .cornerRadius(4)
-            }
-        }*/
-        
-       
+                    }
+                }
+            }.padding([.bottom, .horizontal])
     }
 }
 
@@ -139,3 +103,28 @@ struct Homepage_Previews: PreviewProvider {
         Homepage()
     }
 }
+
+struct GridStack<Content: View>: View {
+    let rows: Int
+    let columns: Int
+    let content: (Int, Int) -> Content
+
+    var body: some View {
+        VStack {
+            ForEach(0 ..< rows, id: \.self) { row in
+                HStack {
+                    ForEach(0 ..< self.columns, id: \.self) { column in
+                        self.content(row, column)
+                    }
+                }
+            }
+        }
+    }
+
+    init(rows: Int, columns: Int, @ViewBuilder content: @escaping (Int, Int) -> Content) {
+        self.rows = rows
+        self.columns = columns
+        self.content = content
+    }
+}
+
