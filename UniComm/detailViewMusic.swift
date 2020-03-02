@@ -48,6 +48,7 @@ struct detailViewMusic: View {
                                }
                            }
                        }
+                        Comment()
                        //now this will show a viewPager with the left being comment and right being review(span the whole width)
                        
                    }

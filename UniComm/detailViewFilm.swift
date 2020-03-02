@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct detailViewFilm: View {
-    
+    @State private var comment = 1
+    @State private var review = 0
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 20) {
@@ -48,17 +49,18 @@ struct detailViewFilm: View {
                 HStack {
                     NavigationLink(destination:Comment()) {
                         Button("Comment") {
-                            
+                            self.comment = 1
+                            self.review = 0
                         }
                     }
                     NavigationLink(destination:Review()) {
                         Button("Review") {
-                            
+                            self.review = 1
+                            self.comment = 0
                         }
                     }
                 }
                 //now this will show a viewPager with the left being comment and right being review(span the whole width)
-                
             }
             //story section(maybe?)
             //similar movielist
