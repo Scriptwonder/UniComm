@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FCD09B924142F760012AAFB /* category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD09B824142F750012AAFB /* category.swift */; };
+		4FCD09BD2414366B0012AAFB /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD09BC2414366B0012AAFB /* Bar.swift */; };
+		4FCD09BF241451760012AAFB /* BarII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD09BE241451760012AAFB /* BarII.swift */; };
 		5B6C689E23F8A82F004B8124 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C689D23F8A82F004B8124 /* Login.storyboard */; };
 		5BA196EA23F8B1DB00A35E4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BA196E923F8B1DB00A35E4C /* GoogleService-Info.plist */; };
 		5BA196EB23F8B1DB00A35E4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BA196E923F8B1DB00A35E4C /* GoogleService-Info.plist */; };
@@ -63,6 +66,9 @@
 		29CCD97723DFEDC2B0747BB8 /* Pods-UniCommTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniCommTests.release.xcconfig"; path = "Target Support Files/Pods-UniCommTests/Pods-UniCommTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AE587338276D3E277883AD1 /* Pods-UniComm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniComm.release.xcconfig"; path = "Target Support Files/Pods-UniComm/Pods-UniComm.release.xcconfig"; sourceTree = "<group>"; };
 		4E2F1EF3C42FD87B30CA62BD /* Pods_UniCommTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniCommTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCD09B824142F750012AAFB /* category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category.swift; sourceTree = "<group>"; };
+		4FCD09BC2414366B0012AAFB /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		4FCD09BE241451760012AAFB /* BarII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarII.swift; sourceTree = "<group>"; };
 		5B6C689D23F8A82F004B8124 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5BA196E923F8B1DB00A35E4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BA1972C23F9F8A000A35E4C /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -180,6 +186,9 @@
 				5BC1824323F313F000F16E39 /* UniComm.xcdatamodeld */,
 				5BC1824A23F313F400F16E39 /* Preview Content */,
 				5BA1972E23FA047F00A35E4C /* Homepage.swift */,
+				4FCD09B824142F750012AAFB /* category.swift */,
+				4FCD09BC2414366B0012AAFB /* Bar.swift */,
+				4FCD09BE241451760012AAFB /* BarII.swift */,
 				5BA1973624031E8C00A35E4C /* detailViewFilm.swift */,
 				5BA197402403496300A35E4C /* detailViewBook.swift */,
 				5BA197422403496C00A35E4C /* detailViewMusic.swift */,
@@ -496,6 +505,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA1973F2403446D00A35E4C /* contentBase.swift in Sources */,
+				4FCD09BD2414366B0012AAFB /* Bar.swift in Sources */,
+				4FCD09B924142F760012AAFB /* category.swift in Sources */,
 				DB7E583623F4B4D300E1D068 /* ViewController.swift in Sources */,
 				5BA19747240B5CE500A35E4C /* Review.swift in Sources */,
 				5BA197432403496C00A35E4C /* detailViewMusic.swift in Sources */,
@@ -506,6 +517,7 @@
 				5BA1973D2403446000A35E4C /* personalBlog.swift in Sources */,
 				5BA1972D23F9F8A000A35E4C /* SignUp.swift in Sources */,
 				5BA197412403496300A35E4C /* detailViewBook.swift in Sources */,
+				4FCD09BF241451760012AAFB /* BarII.swift in Sources */,
 				5BA1973523FC9B1E00A35E4C /* UIScrollViewWrapper.swift in Sources */,
 				BB131D5823FC850E00F03D2D /* User.swift in Sources */,
 				BB131D5A23FC857000F03D2D /* SessionStore.swift in Sources */,

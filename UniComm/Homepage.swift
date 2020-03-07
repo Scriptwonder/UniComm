@@ -13,6 +13,7 @@ struct Homepage: View {
     @State private var films = 1
     @State private var books = 0
     @State private var music = 0
+    //@State var bar = 1
     
     var body: some View {
         NavigationView {
@@ -46,10 +47,15 @@ struct Homepage: View {
             }
             if (self.films == 1) {
                 Films()
+                //Bar()
+                //BarII()
+                
             } else if (self.books == 1) {
                 Books()
+                //Bar()
             } else if (self.music == 1) {
                 Music()
+                //Bar()
             }
             }
             .navigationBarTitle(Text("UniComm"), displayMode: .inline)
