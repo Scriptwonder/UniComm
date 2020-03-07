@@ -70,7 +70,7 @@ struct Homepage: View {
 struct Films: View {
     var body: some View {
         //Group {
-            GridStack(rows: 4, columns: 4) { row, col in
+            GridStack(rows: 2, columns: 3) { row, col in
                 NavigationLink(destination: detailViewFilm()) {
                     VStack {
                 Image("0\((row * 4 + col)%3+1)")
