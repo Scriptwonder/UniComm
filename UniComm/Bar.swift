@@ -12,7 +12,7 @@ struct Bar: View {
     @State var selectedView = 1
     var body: some View {
         TabView(selection: $selectedView){
-            Homepage()
+            MainPage()
                 .tabItem ({
                     VStack {
                         Text("Menu")
@@ -21,7 +21,7 @@ struct Bar: View {
                 
                 }).tag(1)
             
-            category().tabItem({
+            Homepage().tabItem({
                 VStack {
                     Text("Category")
                     Image("cate")

@@ -10,8 +10,8 @@ import SwiftUI
 
 struct Homepage: View {
     @State private var searchText = ""//for search
-    @State private var films = 1
-    @State private var books = 0
+    @State private var films = 0
+    @State private var books = 1
     @State private var music = 0
     //@State var bar = 1
     
@@ -47,15 +47,10 @@ struct Homepage: View {
             }
             if (self.films == 1) {
                 Films()
-                //Bar()
-                //BarII()
-                
             } else if (self.books == 1) {
                 Books()
-                //Bar()
             } else if (self.music == 1) {
                 Music()
-                //Bar()
             }
             }
             .navigationBarTitle(Text("UniComm"), displayMode: .inline)
@@ -76,31 +71,182 @@ struct Homepage: View {
 struct Films: View {
     var body: some View {
         //Group {
-            GridStack(rows: 2, columns: 3) { row, col in
+        ScrollView{
+        VStack(alignment: .leading) {
+            Text("March's Editorial")
+            ScrollView (.horizontal) {
+                 HStack {
+                     //contents
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    
+                 }
+            }.frame(height: 100)
+                .padding()
+
+            Text("Latest")
+            GridStack(rows: 2, columns: 4) { row, col in
                 NavigationLink(destination: detailViewFilm()) {
                     VStack {
-                Image("0\((row * 4 + col)%3+1)")
-                    .renderingMode(.original)
-                    .resizable()
-                    .frame(width: 60, height: 100)
-                    .cornerRadius(4)
-                Text("\(row*4 + col)")
-                    .font(.custom("aa", size: 10))
+                        ItemView(itemImage: "0\((row * 4 + col)%3+1)", itemName: "\(row*4 + col)")
                     }
                 }
             }.padding([.bottom, .horizontal])
+            Text("Upcoming")
+            GridStack(rows: 2, columns: 4) { row, col in
+                NavigationLink(destination: detailViewFilm()) {
+                    VStack {
+                        ItemView(itemImage: "0\((row * 4 + col)%3+1)", itemName: "\(row*4 + col)")
+                    }
+                }
+            }.padding([.bottom, .horizontal])
+            Text("Genre")
+            ScrollView (.horizontal) {
+                 HStack {
+                     //contents
+                    CardView(itemImage: "02", itemName: "ACTION")
+                    CardView(itemImage: "02", itemName: "ADVENTURE")
+                    CardView(itemImage: "02", itemName: "ANIMATION")
+                    CardView(itemImage: "02", itemName: "COMEDY")
+                    CardView(itemImage: "02", itemName: "DRAMA")
+                    CardView(itemImage: "02", itemName: "ROMANCE")
+                    CardView(itemImage: "02", itemName: "SCI-FI")
+                    CardView(itemImage: "02", itemName: "THRILLER")
+                    
+                 }
+            }.frame(height: 100)
+                .padding()
+            
+            Text("Special")
+            ScrollView (.horizontal) {
+                 HStack {
+                     //contents
+                    CardView(itemImage: "02", itemName: "BERLIN 2020")
+                    CardView(itemImage: "02", itemName: "OSCARS 2020")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    
+                 }
+            }.frame(height: 100)
+                .padding()
+        }
+        }
     }
 }
 
 struct Books: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(alignment:.leading) {
+            Text("March's Editorial")
+            ScrollView (.horizontal) {
+                    HStack {
+                         //contents
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    
+                    }
+            }.frame(height: 100)
+                .padding()
+            Text("New Books")
+            GridStack(rows: 2, columns: 4) { row, col in
+                NavigationLink(destination: detailViewFilm()) {
+                    VStack {
+                        ItemView(itemImage: "0\((row * 4 + col)%3+1)", itemName: "\(row*4 + col)")
+                    }
+                }
+            }.padding([.bottom, .horizontal])
+            Text("Genre Top")
+            ScrollView (.horizontal) {
+                 HStack {
+                     //contents
+                    CardView(itemImage: "02", itemName: "LITERATURE")
+                    CardView(itemImage: "02", itemName: "POETRY")
+                    CardView(itemImage: "02", itemName: "NOVEL")
+                    CardView(itemImage: "02", itemName: "DRAMA")
+                    CardView(itemImage: "02", itemName: "BIOGRAPHY")
+                    CardView(itemImage: "02", itemName: "HISTORY")
+                    CardView(itemImage: "02", itemName: "ART")
+                 }
+            }.frame(height: 100)
+                .padding()
+            Text("Special")
+            ScrollView (.horizontal) {
+                 HStack {
+                     //contents
+                    CardView(itemImage: "02", itemName: "2020")
+                    CardView(itemImage: "02", itemName: "2020")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    
+                 }
+            }.frame(height: 100)
+                .padding()
+        }
+        }
     }
 }
 
 struct Music: View {
     var body: some View {
-        Text("Hello, World!")
+        ScrollView{
+            VStack(alignment: .leading) {
+            Text("March's Editorial")
+            ScrollView (.horizontal) {
+                    HStack {
+                         //contents
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    ItemView(itemImage: "01", itemName: "01")
+                    
+                    }
+            }.frame(height: 100)
+                .padding()
+            Text("New Music")
+            GridStack(rows: 2, columns: 4) { row, col in
+                NavigationLink(destination: detailViewFilm()) {
+                    VStack {
+                        ItemView(itemImage: "0\((row * 4 + col)%3+1)", itemName: "\(row*4 + col)")
+                    }
+                }
+            }.padding([.bottom, .horizontal])
+            Text("Genre")
+            ScrollView (.horizontal) {
+                 HStack {
+                     //contents
+                    CardView(itemImage: "02", itemName: "POP")
+                    CardView(itemImage: "02", itemName: "ROCK")
+                    CardView(itemImage: "02", itemName: "HIP-HOP")
+                    CardView(itemImage: "02", itemName: "ELECTRONIC")
+                    CardView(itemImage: "02", itemName: "JAZZ")
+                    CardView(itemImage: "02", itemName: "INDIE")
+                 }
+            }.frame(height: 100)
+                .padding()
+            Text("Special")
+            ScrollView (.horizontal) {
+                HStack {
+                         //contents
+                    CardView(itemImage: "02", itemName: "2020")
+                    CardView(itemImage: "02", itemName: "2020")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    CardView(itemImage: "02", itemName: "AAA")
+                    CardView(itemImage: "02", itemName: "AAA")
+                }
+            }.frame(height: 100)
+                .padding()
+        }
+        }
     }
 }
 

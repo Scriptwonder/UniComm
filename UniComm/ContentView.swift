@@ -41,7 +41,7 @@ struct ContentView: View {
             }.padding(.leading)
             
             VStack(alignment: .center, spacing: 10.0) {
-                NavigationLink(destination: Homepage()) {
+                NavigationLink(destination: Bar()) {
                 Text("Login")
                 }
                 NavigationLink(destination: SignUp(),isActive: $showView) {                Text("Register")
