@@ -44,7 +44,7 @@ struct Homepage: View {
                     }
                     Spacer()
                 }.frame(width: UIScreen.main.bounds.width)
-            }
+            }.frame(height:20)
             if (self.films == 1) {
                 Films()
             } else if (self.books == 1) {
@@ -64,7 +64,8 @@ struct Homepage: View {
                     }
                 }
             )
-        }
+            
+        }.frame(alignment: .leading)
     }
 }
 
@@ -134,7 +135,7 @@ struct Films: View {
             }.frame(height: 100)
                 .padding()
         }
-        }
+        }.frame(maxHeight: .infinity)
     }
 }
 

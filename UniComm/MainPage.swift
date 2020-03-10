@@ -14,6 +14,7 @@ struct MainPage: View {
     @State private var plaza = 0
     
     var body: some View {
+        NavigationView {
         Group {
             SearchBar(text: $searchText)
             UIScrollViewWrapper {
@@ -50,6 +51,7 @@ struct MainPage: View {
                 }
             }
         )
+        }
     }
 }
 

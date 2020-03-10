@@ -14,6 +14,7 @@ struct SignUp: View {
     @State var password: String = ""
     @State var password1: String = ""
     var body: some View {
+        ScrollView {
         VStack {
             Image("logo1").resizable().scaledToFit().frame(width:300.0,height:280.0)
             Text("Sign Up").fontWeight(.medium)
@@ -46,6 +47,7 @@ struct SignUp: View {
                     Text("Submit").font(.headline)
                 }
             }
+        }
         }
     }
 }
