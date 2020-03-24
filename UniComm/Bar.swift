@@ -41,7 +41,7 @@ struct Bar: View {
                     Image("chat")
                 }
                 }).tag(4)
-            personalBlog().tabItem({
+            HomeView().tabItem({
                 VStack {
                     Text("Blog")
                     Image("per")

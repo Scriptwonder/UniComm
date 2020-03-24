@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "imageName": "movieIcon",
+        "categoryName": "genre"
+    },
+    {
+        "id": 2,
+        "imageName": "bookIcon",
+        "categoryName": "review"
+    },
+    {
+        "id": 3,
+        "imageName": "musicIcon",
+        "categoryName": "genre"
+    }
+]

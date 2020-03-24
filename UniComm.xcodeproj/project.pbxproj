@@ -37,6 +37,13 @@
 		5BE051892415930800B62ED0 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE051882415930800B62ED0 /* ItemView.swift */; };
 		5BE0518B24159EBE00B62ED0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0518A24159EBE00B62ED0 /* CardView.swift */; };
 		5BE0518D2415BA8B00B62ED0 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0518C2415BA8B00B62ED0 /* MainPage.swift */; };
+		5BE0518F242A66DA00B62ED0 /* CategoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0518E242A66D900B62ED0 /* CategoryDetail.swift */; };
+		5BE05191242A66EA00B62ED0 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BE05190242A66EA00B62ED0 /* category.json */; };
+		5BE05193242A66FA00B62ED0 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE05192242A66FA00B62ED0 /* ProfileRow.swift */; };
+		5BE05195242A670000B62ED0 /* ProfileItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE05194242A670000B62ED0 /* ProfileItems.swift */; };
+		5BE05197242A691000B62ED0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE05196242A691000B62ED0 /* Home.swift */; };
+		5BE05199242A692200B62ED0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE05198242A692200B62ED0 /* Profile.swift */; };
+		5BE0519B242A692A00B62ED0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0519A242A692A00B62ED0 /* Data.swift */; };
 		7503627678B5B9A99C8DE049 /* Pods_UniComm_UniCommUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B8849D094E7A09DAB787E /* Pods_UniComm_UniCommUITests.framework */; };
 		9568353EE06957BF6BD2C8D7 /* Pods_UniComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF4669AD670E95192F55F5 /* Pods_UniComm.framework */; };
 		BB131D5823FC850E00F03D2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB131D5723FC850E00F03D2D /* User.swift */; };
@@ -101,6 +108,13 @@
 		5BE051882415930800B62ED0 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		5BE0518A24159EBE00B62ED0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5BE0518C2415BA8B00B62ED0 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		5BE0518E242A66D900B62ED0 /* CategoryDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDetail.swift; sourceTree = "<group>"; };
+		5BE05190242A66EA00B62ED0 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		5BE05192242A66FA00B62ED0 /* ProfileRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
+		5BE05194242A670000B62ED0 /* ProfileItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileItems.swift; sourceTree = "<group>"; };
+		5BE05196242A691000B62ED0 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5BE05198242A692200B62ED0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5BE0519A242A692A00B62ED0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		69E1331E8309F858F849CB54 /* Pods-UniComm-UniCommUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniComm-UniCommUITests.debug.xcconfig"; path = "Target Support Files/Pods-UniComm-UniCommUITests/Pods-UniComm-UniCommUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		729B8849D094E7A09DAB787E /* Pods_UniComm_UniCommUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniComm_UniCommUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF4669AD670E95192F55F5 /* Pods_UniComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +218,13 @@
 				5BA19746240B5CE500A35E4C /* Review.swift */,
 				5BE0518A24159EBE00B62ED0 /* CardView.swift */,
 				5BE051882415930800B62ED0 /* ItemView.swift */,
+				5BE0519A242A692A00B62ED0 /* Data.swift */,
+				5BE05198242A692200B62ED0 /* Profile.swift */,
+				5BE05196242A691000B62ED0 /* Home.swift */,
+				5BE0518E242A66D900B62ED0 /* CategoryDetail.swift */,
+				5BE05190242A66EA00B62ED0 /* category.json */,
+				5BE05192242A66FA00B62ED0 /* ProfileRow.swift */,
+				5BE05194242A670000B62ED0 /* ProfileItems.swift */,
 			);
 			path = UniComm;
 			sourceTree = "<group>";
@@ -359,6 +380,7 @@
 			files = (
 				5BC1824C23F313F400F16E39 /* Preview Assets.xcassets in Resources */,
 				5BA196EA23F8B1DB00A35E4C /* GoogleService-Info.plist in Resources */,
+				5BE05191242A66EA00B62ED0 /* category.json in Resources */,
 				5B6C689E23F8A82F004B8124 /* Login.storyboard in Resources */,
 				5BC1824923F313F400F16E39 /* Assets.xcassets in Resources */,
 			);
@@ -508,24 +530,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA1973F2403446D00A35E4C /* contentBase.swift in Sources */,
+				5BE05199242A692200B62ED0 /* Profile.swift in Sources */,
 				4FCD09BD2414366B0012AAFB /* Bar.swift in Sources */,
 				DB7E583623F4B4D300E1D068 /* ViewController.swift in Sources */,
+				5BE05197242A691000B62ED0 /* Home.swift in Sources */,
 				5BE051892415930800B62ED0 /* ItemView.swift in Sources */,
 				5BE0518D2415BA8B00B62ED0 /* MainPage.swift in Sources */,
 				5BA19747240B5CE500A35E4C /* Review.swift in Sources */,
 				5BA197432403496C00A35E4C /* detailViewMusic.swift in Sources */,
 				5BA1973323FC933000A35E4C /* searchBar.swift in Sources */,
+				5BE0518F242A66DA00B62ED0 /* CategoryDetail.swift in Sources */,
 				5BA1973123FA0C3300A35E4C /* forgetPassword.swift in Sources */,
 				5BC1824023F313F000F16E39 /* AppDelegate.swift in Sources */,
+				5BE0519B242A692A00B62ED0 /* Data.swift in Sources */,
 				5BC1824523F313F000F16E39 /* UniComm.xcdatamodeld in Sources */,
 				5BA1973D2403446000A35E4C /* personalBlog.swift in Sources */,
 				5BA1972D23F9F8A000A35E4C /* SignUp.swift in Sources */,
 				5BA197412403496300A35E4C /* detailViewBook.swift in Sources */,
 				5BE0518B24159EBE00B62ED0 /* CardView.swift in Sources */,
+				5BE05195242A670000B62ED0 /* ProfileItems.swift in Sources */,
 				5BA1973523FC9B1E00A35E4C /* UIScrollViewWrapper.swift in Sources */,
 				BB131D5823FC850E00F03D2D /* User.swift in Sources */,
 				BB131D5A23FC857000F03D2D /* SessionStore.swift in Sources */,
 				5BA1973724031E8C00A35E4C /* detailViewFilm.swift in Sources */,
+				5BE05193242A66FA00B62ED0 /* ProfileRow.swift in Sources */,
 				5BA1973B2403445400A35E4C /* chat.swift in Sources */,
 				5BA19745240B5CDB00A35E4C /* Comment.swift in Sources */,
 				5BC1824723F313F000F16E39 /* ContentView.swift in Sources */,
